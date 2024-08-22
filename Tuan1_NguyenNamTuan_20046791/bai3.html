@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const dolphinsScores = [96, 108, 89];
+        const koalasScores = [88, 91, 110];
+
+
+        const dolphinsAverage = (dolphinsScores[0] + dolphinsScores[1] + dolphinsScores[2]) / 3;
+        const koalasAverage = (koalasScores[0] + koalasScores[1] + koalasScores[2]) / 3;
+
+        console.log(`Dolphins' average score: ${dolphinsAverage}`);
+        console.log(`Koalas' average score: ${koalasAverage}`);
+
+        if (dolphinsAverage > koalasAverage) {
+            console.log("Dolphins win the trophy!");
+        } else if (koalasAverage > dolphinsAverage) {
+            console.log("Koalas win the trophy!");
+        } else {
+            console.log("It's a draw!");
+        }
+
+
+        const minimumScore = 100;
+
+        if (dolphinsAverage > koalasAverage && dolphinsAverage >= minimumScore) {
+            console.log("Dolphins win the trophy!");
+        } else if (koalasAverage > dolphinsAverage && koalasAverage >= minimumScore) {
+            console.log("Koalas win the trophy!");
+        } else if (dolphinsAverage === koalasAverage && dolphinsAverage >= minimumScore && koalasAverage >= minimumScore) {
+            console.log("It's a draw!");
+        } else {
+            console.log("No team wins the trophy.");
+        }
+
+
+        if (dolphinsAverage === koalasAverage && dolphinsAverage >= minimumScore && koalasAverage >= minimumScore) {
+            console.log("It's a draw!");
+        } else if (dolphinsAverage > koalasAverage && dolphinsAverage >= minimumScore) {
+            console.log("Dolphins win the trophy!");
+        } else if (koalasAverage > dolphinsAverage && koalasAverage >= minimumScore) {
+            console.log("Koalas win the trophy!");
+        } else {
+            console.log("No team wins the trophy.");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
